@@ -10,7 +10,7 @@ const app = express();
 
 // Middlewares
 app.use(cors({
-  origin: "https://your-frontend.vercel.app",
+  origin: "https://auth-app-git-main-muralis-projects-53a36327.vercel.app",
   credentials: true
 }));
 app.use(express.json());
