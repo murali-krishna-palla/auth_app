@@ -9,15 +9,10 @@ connectDB();
 const app = express();
 
 // Middlewares
-app.use(
-  cors({
-    origin: [
-      "http://localhost:5173",
-      "https://auth-ernbcp6mv-muralis-projects-53a36327.vercel.app"
-    ],
-    credentials: true,
-  })
-);
+app.use(cors({
+  origin: "https://your-frontend.vercel.app",
+  credentials: true
+}));
 app.use(express.json());
 
 // Health check
